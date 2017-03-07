@@ -1,13 +1,13 @@
 
 
-public class CuentaBancaria
+public class CuentaBancaria implements Measurable
 {
     private int saldo;
     
     public CuentaBancaria(int sal){
         saldo=sal;
     }
-    int getSaldo(){
+    public int getMedida(){
         return saldo;
     }
 }

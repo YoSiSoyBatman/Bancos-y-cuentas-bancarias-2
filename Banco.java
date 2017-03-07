@@ -2,8 +2,7 @@
 import java.util.ArrayList;
 public class Banco
 {
-    ArrayList <CuentaBancaria> bancs;
-    
+    private ArrayList <CuentaBancaria> bancs; 
     public Banco(){
         bancs=new ArrayList <CuentaBancaria>();
     }
@@ -15,7 +14,7 @@ public class Banco
         int i=0;
         for(CuentaBancaria cuetemp:bancs){
             i++;
-            ret+=cuetemp.getSaldo();
+            ret+=cuetemp.getMedida();
         }
         ret/=i;
         return ret;
